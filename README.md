@@ -25,13 +25,14 @@ Kaggle housing dataset Ames, Iowa
 ---
 ### Brief Summary 
 
-This project seeks to determine the best Linear Regression technique to use in predicting the sale price of houses in Iowa.  
+Multiple Linear Regression is a supervised learning technique that attempts to model a relationship between a single continuous variable (dependent variable) and multiple independent variables. In this project, I will be evaluating the results of major techniques used for modeling linear regression. The three regression models I will be evaluating are;
 
-I will be comparing these three techniques
+**Ordinary Least Squares:** Findes the relationship between dependent and independent variables by minimizing the sum of residuals.
 
-- <b>Linear Regression or Ordinary Least Square or OLS</b>
-- <b>Lasso Regression</b>
-- <b>Ridge Regression</b>
+**Lasso regression:** Unlike OLS where the weights of individual features have a significant influence on the model, this technique places a penalty on the sum of the absolute values of the weights causing it to reduce and even tend to zero.
+
+**Ridge regression:** This technique places a penalty on the sum of the squared values of the weights. This not only reduces the absolute values of the weights but also penalizes features with large weights.
+
 
 ---
 ### Methodology

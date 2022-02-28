@@ -10,7 +10,7 @@ _Author: Afolabi Cardoso_
 [Problem Statement](#Problem-Statement) | [Dataset](#Dataset) | [Brief Summary](#Brief-Summary) | [Methodology](#Methodology) | [Modeling](#Modeling) | [Evaluation](#Evaluation) | [Conclusion](#Conclusion) | [Recommendations](#Recommendations)
 
 ---
-### Problem Statement
+### Problem Statement/ Scenerio
 I am a Data Science Phd student at MIT and my Supervisor asked me to determine the best Linear Regression technique to use in determining the Sale Price of houses in his home town of Ames, Iowa.
 
 ---
@@ -25,7 +25,7 @@ Kaggle housing dataset Ames, Iowa
 ---
 ### Brief Summary 
 
-This project seeks to determine the best Linear Regression technique to use in predict the sale price of houses in Iowa.  
+This project seeks to determine the best Linear Regression technique to use in predicting the sale price of houses in Iowa.  
 
 I will be comparing these three techniques
 

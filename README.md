@@ -1,6 +1,6 @@
 <img src="images/house.jpeg" style="float: center; margin: 20px; height: 55px">
 
-# Project 2 - Ames Housing Data and Kaggle Challenge
+# Ames Housing Data and Kaggle Challenge
 
 _Author: Afolabi Cardoso_
 
@@ -11,15 +11,11 @@ _Author: Afolabi Cardoso_
 
 ---
 ### Problem Statement
-I am a Data Science Phd student at MIT and my Supervisor asked me to determine the best Linear Regression technique to use in determining the Sale Price of houses in his home town of Ames, Iowa.
+This project seeks to explore the various Linear Regression techniques and compare the accuracy of each in predicting the sale price of houses in Iowa.
 
 ---
 ### Dataset
 Kaggle housing dataset Ames, Iowa
-
-The Kaggle Housing Dataset contains 78 housing features that we will use as independent variables and sale price as the dependent variables. There are 2051 entries.
-The format of the dataset is a csv file.
-
 
 ##### Data Dictionary
 
@@ -29,13 +25,13 @@ The format of the dataset is a csv file.
 ---
 ### Brief Summary 
 
-Multiple Linear Regression is a supervised learning technique that attempts to model a relationship between a single continuous variable (dependent variable) and multiple independent variables. In this project, I will be evaluating the results of major techniques used for modeling linear regression. The three regression models I will be evaluating are;
+In this project, I will be working with a housing dataset provided by Kaggle. A copy of the dataset can be found in the links above.
 
-**Ordinary Least Squares:** Findes the relationship between dependent and independent variables by minimizing the sum of residuals.
+Multiple Linear Regression is a supervised machine learning technique that attempts to model a relationship between a single continuous variable (dependent variable) and multiple independent variables. In this project, I will be evaluating the results of major techniques used for modeling linear regression. The three regression models I will be evaluating are;
 
-**Lasso regression:** Unlike OLS where the weights of individual features have a significant influence on the model, this technique places a penalty on the sum of the absolute values of the weights causing it to reduce and even tend to zero.
-
-**Ridge regression:** This technique places a penalty on the sum of the squared values of the weights. This not only reduces the absolute values of the weights but also penalizes features with large weights.
+1. Ordinary Least Squares: Findes the relationship between dependent and independent variables by minimizing the sum of residuals.
+2. Lasso regression: Unlike OLS where the weights of individual features have a significant influence on the model, this technique places a penalty on the sum of the absolute values of the weights causing it to reduce and even tend to zero.
+3. Ridge regression: This technique places a penalty on the sum of the squared values of the weights. This not only reduces the absolute values of the weights but also penalizes features with large weights.
 
 ---
 ### Methodology
@@ -56,19 +52,18 @@ No external data is required for this project
 
 This notebook uses exploratory data anysis techniques to visualize the relationsips between features and SalePrice.
 
-- I start by generating a heat map to show correlation between variables and sale price
-- I explored the variables with large number of missing values to see the significance of dropping them 
-- I explored the numerical variables and selected the features with strong correlation with the sale price
-- Finally I explored the categorical variables and checked for collinearity
-
+- I start by generating a heat map to show correlation between variables and SalePrice
+- I exploring the variables with large number of missing values and checking to see if dropping them will be beneficial
+- I explore the numerical variables and select the features with strong correlation with the SalePrice
+- Finally I explore the categorical variables and check for colinearity
 
 #### Feature Selection
 
-Linear regression only works with continuous variables, so in order to be able to use the categorical variables in the model, I used a pandas method called get_dummies to transform the categorical variables into continuous variables. 
+In order to be able to use the categorical variables in the model, I used a pandas method called get_dummies. This method converts each category in a feature into columns.
 
-For the Lasso and Ridge models, I applied Standard Scaler to the features before fitting. The standard scaler helps transform all the features into a uniform scale.
+For the Lasso and Ridge models, I applied **Standard Scaler** to the features before fitting. The standard scaler helps transform all the features into a uniform scale 
+
 I did this to both the train and test dataset
-
 
 ---
 ### Modeling
